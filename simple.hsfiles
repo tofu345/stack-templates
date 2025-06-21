@@ -36,6 +36,12 @@ executable {{name}}
 import Distribution.Simple
 main = defaultMain
 
+{-# START_FILE stack.yaml #-}
+snapshot: lts-23.25
+
+packages:
+- .
+
 {-# START_FILE README.md #-}
 # {{name}}
 
